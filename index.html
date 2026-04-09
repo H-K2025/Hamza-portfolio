@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamza | Portfolio</title>
+
+<style>
+body {
+  padding-top: 70px;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1a1a1a;
+  background: linear-gradient(to bottom, #f5f7fa, #e4ecf7);
+  scroll-behavior: smooth;
+}
+
+h1 { font-size: 44px; }
+h2 { color: #2b6cb0; }
+p { max-width: 750px; margin: 10px auto; line-height: 1.7; }
+section { padding: 80px 20px; text-align: center; }
+
+/*email*/
+.email-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/* NAVBAR */
+section {
+  scroll-margin-top: 90px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #2b6cb0;
+  font-weight: bold;
+  position: relative;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #2b6cb0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after { width: 100%; }
+
+
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #2b6cb0, #4c9aff);
+  color: white;
+  padding: 110px 20px;
+}
+
+.hero img {
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+/* BOX */
+.box {
+  background: white;
+  margin: 25px auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 85%;
+  max-width: 800px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* .box:hover { transform: translateY(-6px); } */
+.box:hover {
+  transform: none;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #2b6cb0;
+}
+
+.timeline div {
+  margin: 20px 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+.timeline div::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: #2b6cb0;
+  border-radius: 50%;
+}
+
+/* ANIMATION */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#dofe">DofE</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<section id="home" class="hero">
+  <h1 id="typing"></h1>
+  <h2>Student • Programmer • Footballer</h2>    
+
+  <p>
+    I am a motivated and curious student at Ipswich Academy who enjoys learning, solving problems, and constantly improving.
+    Through my DofE Bronze Award, I have been developing my programming skills and building my own website from scratch.
+  </p>
+
+  <p style="color: #3b3735; font-family: Dancing Script; font-size: 30px; margin-bottom: 0px;">
+    Parternered with:
+  </p>
+
+  <a style="text-decoration: none;" href="https://ipswichacademy.paradigmtrust.org/">
+    <img src="image.png" width="250" height="100">
+  </a>
+  <a href="https://www.dofe.org/">
+    <img src="https://opendofe.org/images/template-content/square_level_logo_-_BRONZE.jpg"
+   width="100" height="100" style="border-radius: 50%;">
+  </a>
+  
+</section>
+
+<section id="about">
+  <h1>About Me</h1>
+  <div class="box hidden">
+    <p>
+      I was born in America and come from an Indian background. I study at Ipswich Academy and consider myself an academic and focused student who enjoys learning and challenging myself.
+    </p>
+
+    <p>
+      I am creative, curious, competitive, and determined. I enjoy improving both individually and as part of a team, and I stay calm under pressure.
+    </p>
+
+    <p>
+      I chose programming because I enjoy problem-solving and understanding how technology works. In the future, I am interested in artificial intelligence or becoming a professional programmer.
+    </p>
+  </div>
+</section>
+
+<section id="hobbies">
+  <h1>Hobbies & Interests</h1>
+  <div class="box hidden">
+    <p>
+      Football is a major part of my life. I play competitively for Chantry Grasshoppers U14 Navy as a left-back, centre midfielder, and attacking midfielder.
+      I focus on positioning, passing, and improving my overall game understanding.
+    </p>
+
+    <p>
+      I also enjoy cooking and helping my family, which has made me more independent and responsible.
+      I enjoy learning, especially maths, as I like solving problems and thinking logically.
+    </p>
+
+    <p>
+      I support Manchester City and enjoy watching high-level football.
+    </p>
+  </div>
+</section>
+
+<section id="dofe">
+  <h1>DofE Programming Progress</h1>
+  <div class="box hidden">
+    <div class="timeline">
+      <div><strong>Month 1:</strong> Learned HTML basics and structure.</div>
+      <div><strong>Month 2:</strong> Improved design using CSS.</div>
+      <div><strong>Month 3:</strong> Organised content into sections.</div>
+      <div><strong>Month 4:</strong> Added animations and styling improvements.</div>
+      <div><strong>Month 5:</strong> Learned JavaScript and interactivity.</div>
+      <div><strong>Month 6:</strong> Built a complete portfolio website.</div>
+    </div>
+
+    <h2>Physical</h2>
+    <p>
+      For my physical section, I took part in weekly school football training sessions
+      led by Mr Williams. Each session focused on different aspects of the game, such as
+      passing, positioning, and defending, which helped me improve my overall understanding
+      of football. Over time, I noticed that I became more confident in my decision-making
+      during games and more consistent in my performance. I also improved my fitness and
+      discipline by attending regularly and putting effort into every session. This experience helped me realise the
+      importance of hard work, consistency, and listening to feedback in order to improve.
+    </p>
+
+    <h2>Volunteering</h2>
+    <p>
+       For my volunteering section, I helped with Year 7 football sessions at school 
+       each week. As a Year 9 student, I took on the responsibility of supporting younger 
+       students by helping them with drills and encouraging them to stay engaged. At first, 
+       I found it challenging to guide others, but over time I became more confident in 
+       communicating and leading small groups. This experience helped me develop my 
+       leadership and patience, as I learned that different people improve in different ways. 
+       It also made me feel more responsible and proud to be able to support others and 
+       contribute positively to the school community.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h1>Contact</h1>
+  <div class="box hidden">
+    <a href="mailto:hamza.khan@ipswichacademy.org.uk" style="">
+      <p>Email: hamza.khan@ipswichacademy.org.uk</p>
+    </a>
+    
+  </div>
+</section>
+
+<script>
+// TYPING EFFECT
+const text = "Hi, I'm Hamza";
+let i = 0;
+function typing() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 80);
+  }
+}
+typing();
+
+// SCROLL ANIMATION
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
